@@ -3,7 +3,7 @@
 import java.awt.event.*;
 import javax.swing.*;
 
-public class simpleCalculator extends JFrame implements ActionListener {
+public class simpleCalculatorGUI extends JFrame implements ActionListener {
     // Declaring the variables
     private static final long serialVersionUID = 1L;
     private JTextField textField;
@@ -12,9 +12,9 @@ public class simpleCalculator extends JFrame implements ActionListener {
     private char operator;
 
     // Constructor
-    simpleCalculator() {
+    simpleCalculatorGUI() {
         // Creating the frame
-        JFrame frame = new JFrame("Simple Calculator");
+        JFrame frame = new JFrame("GUI Based Simple Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
         frame.setLayout(null);
@@ -113,7 +113,7 @@ public class simpleCalculator extends JFrame implements ActionListener {
 
     // Main method
     public static void main(String[] args) {
-        new simpleCalculator();
+        new simpleCalculatorGUI();
     }
 
     // Action performed method
